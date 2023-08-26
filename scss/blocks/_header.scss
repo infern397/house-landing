@@ -1,0 +1,52 @@
+.header {
+
+    background-color: $green-secondary;
+}
+
+.container {
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 100px;
+}
+.logo {
+    position: relative;
+    padding-left: 42px;
+
+    color: $green;
+    font-weight: 700;
+    font-size: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+
+        width: 35px;
+        height: 35px;
+        left: 0;
+        top: 0;
+        transform: translateY(-6px);
+
+        background-image: url(./../img/header/star.svg);
+    }
+}
+.header__activity {
+    display: flex;
+    gap: 60px;
+}
+.header__nav {
+    font-size: 20px;
+}
+.nav {
+}
+.nav__list {
+    display: flex;
+    gap: 60px;
+}
+.header__shopping {
+}
+.shopping__img {
+}

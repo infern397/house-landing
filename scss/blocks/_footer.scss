@@ -1,0 +1,54 @@
+.footer {
+    background-color: $green-secondary;
+}
+.container {
+}
+.footer__inner {
+    display: flex;
+    padding: 23px 15px;
+}
+.footer__left {
+    margin-right: 115px;
+}
+.logo {
+}
+.footer__phone {
+    margin-top: 35px;
+    font-size: 20px;
+}
+.footer__phone-desc {
+    color: $faded;
+}
+.footer__right {
+    display: flex;
+}
+.footer__nav {
+    display: flex;
+    gap: 60px;
+    margin-right: 250px;
+}
+.footer__nav-column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.nav-column__title {
+    color: $black;
+    font-size: 20px;
+}
+.nav-column__link {
+    color: $faded;
+    line-height: 150%; /* 27px */
+}
+.footer__social {
+}
+.social__images {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.footer__rights {
+    color: $faded;
+    font-size: 12px;
+    line-height: 120%; /* 14.4px */
+}

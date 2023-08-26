@@ -1,0 +1,31 @@
+.team {
+}
+
+.team__inner {
+    padding: 70px 15px;
+    display: flex;
+    gap: 30px;
+}
+.team__img {
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 124px;
+}
+.team__title {
+    font-size: 40px;
+    line-height: 110%; /* 44px */
+}
+.team__text {
+    line-height: 150%; /* 27px */
+}
+.team__persons {
+    display: flex;
+    gap: 30px;
+}
+
+.team__person-img {
+    
+}
