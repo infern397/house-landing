@@ -104,6 +104,12 @@ a {
   border: 1px solid #598D66;
   color: #598D66;
   font-size: 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.button:hover {
+  background-color: #598D66;
+  color: #F4F6F5;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .container {
@@ -148,6 +154,15 @@ a {
 .header__activity {
   display: flex;
   gap: 60px;
+  transition: all 0.5s ease;
+}
+.header__activity a:hover {
+  color: #598D66;
+  transition: color 0.5s ease;
+}
+.header__activity .cart:hover path {
+  stroke: #598D66;
+  transition: stroke 0.5s ease;
 }
 
 .header__nav {
@@ -157,6 +172,10 @@ a {
 .nav__list {
   display: flex;
   gap: 60px;
+}
+
+.cart:hover path {
+  stroke: #598D66;
 }
 
 .top__inner {
@@ -206,10 +225,16 @@ a {
   padding: 10px 20px;
   border-radius: 20px;
   background: #E1EDE6;
+  transition: all 0.5s ease;
 }
 .reproductions__btn--active {
   background-color: #376B44;
   color: #F4F6F5;
+}
+.reproductions__btn:hover {
+  background-color: #598D66;
+  color: #F4F6F5;
+  transition: all 0.5s ease;
 }
 
 .reproductions__cards {
@@ -303,8 +328,15 @@ a {
   width: 257px;
   height: 65px;
   background: #EEDB6D;
+  border: none;
   color: #2C2D35;
   font-size: 20px;
+  transition: all 0.5s ease;
+}
+.cta__btn:hover {
+  background-color: #FAEB97;
+  color: #2C2D35;
+  transition: all 0.5s ease;
 }
 
 .team__inner {
@@ -336,6 +368,11 @@ a {
 
 .footer {
   background-color: #E1EDE6;
+  transition: color 0.5s ease;
+}
+.footer a:hover {
+  color: #598D66;
+  transition: color 0.5s ease;
 }
 
 .footer__inner {
@@ -380,6 +417,14 @@ a {
 .nav-column__link {
   color: #86928B;
   line-height: 150%; /* 27px */
+}
+
+.footer__social {
+  transition: fill 0.5s ease;
+}
+.footer__social svg:hover path {
+  fill: #598D66;
+  transition: fill 0.5s ease;
 }
 
 .social__images {

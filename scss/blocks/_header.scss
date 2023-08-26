@@ -36,6 +36,18 @@
 .header__activity {
     display: flex;
     gap: 60px;
+
+    a:hover {
+        color: $green;
+        transition: color 0.5s ease;
+    }
+
+    .cart:hover path {
+        stroke: $green;
+        transition: stroke 0.5s ease;
+    }
+
+    transition: all 0.5s ease;
 }
 .header__nav {
     font-size: 20px;
@@ -48,5 +60,7 @@
 }
 .header__shopping {
 }
-.shopping__img {
+
+.cart:hover path {
+    stroke: $green;
 }

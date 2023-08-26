@@ -1,6 +1,13 @@
 .footer {
     background-color: $green-secondary;
+
+    a:hover {
+        color: $green;
+        transition: color 0.5s ease;
+    }
+    transition: color 0.5s ease;
 }
+
 .container {
 }
 .footer__inner {
@@ -41,6 +48,11 @@
     line-height: 150%; /* 27px */
 }
 .footer__social {
+    svg:hover path {
+        fill: $green;
+        transition: fill 0.5s ease;
+    }
+    transition: fill 0.5s ease;
 }
 .social__images {
     display: flex;

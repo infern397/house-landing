@@ -168,12 +168,4 @@ class Card {
 
 countruesBtns.addEventListener('click', e => btnTriggerCards(e));
 
-// let a = new Card(
-//     './img/reproductions/france/1.jpg', 
-//     'Марсель Руссо', 
-//     'Охота Амура', 
-//     'Холст, масло (50х80)',
-//     '14 500 руб');
-// a.render(cardsParent);
-
 renderCards(cardsInfo['france']);

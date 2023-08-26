@@ -19,6 +19,18 @@ a {
     border: 1px solid $green;
     color: $green;
     font-size: 20px;
+
+    transition: 
+        background-color 0.5s ease,
+        color 0.5s ease;
+
+    &:hover {
+        background-color: $green;
+        color: $background-color;
+        transition: 
+        background-color 0.5s ease,
+        color 0.5s ease;
+    }
 }
 
 .container {
