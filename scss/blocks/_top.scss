@@ -8,6 +8,10 @@
     align-items: center;
 }
 .top__img {
+    flex-shrink: 0;
+    @include mediaTablet {
+        width: 540px;
+    }
 }
 .top__content {
 }
@@ -21,12 +25,21 @@
     span {
         color: $green;
     }
+
+    @include mediaTablet {
+        font-size: 40px;
+        line-height: 100%; /* 66px */
+    }
 }
 .top__text {
     color: $faded;
     line-height: 150%; /* 27px */
 
     padding-bottom: 60px;
+
+    @include mediaTablet {
+        padding-bottom: 40px;
+    }
 }
 .top__btn {
 }

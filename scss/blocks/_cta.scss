@@ -6,6 +6,13 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,43,67,0.007) 100%, rgba(0,212,255,1) 100%),
     url(./../img/cta/background.jpg);
     background-size: cover;
+
+    @include mediaTablet {
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,43,67,0.007) 100%, rgba(0,212,255,1) 100%),
+        url(./../img/cta/background-tablet.png);
+        background-size: cover;
+        height: 502px;
+    }
 }
 .container {
 }
@@ -15,6 +22,10 @@
 
 .cta__content {
     width: 540px;
+
+    @include mediaTablet {
+        max-width: 690px;
+    }
 }
 
 .cta__title {
@@ -32,16 +43,29 @@
         height: 80px;
         left: 0;
         top: 0;
-        transform: translateY(-6px);
+        // transform: translateY(12%);
 
         background-image: url(./../img/cta/star.svg);
+
+        @include mediaTablet {
+            width: 60px;
+            height: 60px;
+            background-size: cover;
+            
+        }
+    }
+
+    @include mediaTablet {
+        font-size: 30px;
+        padding-left: 80px;
+        max-width: 450px;
     }
 }
 
 .cta__text {
     color: $white;
     line-height: 150%; /* 27px */
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .cta__btn {
@@ -61,6 +85,11 @@
         color: $black;
         transition: all 0.5s ease;
     }
+
+    @include mediaTablet {
+        width: 210px;
+        height: 60px;
+}
 }
 .button {
 }

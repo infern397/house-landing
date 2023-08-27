@@ -31,12 +31,21 @@ a {
         background-color 0.5s ease,
         color 0.5s ease;
     }
+
+    @include mediaTablet {
+        width: 210px;
+        height: 60px;
+    }
 }
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
+    // padding: 0 15px;
     max-width: 1140px;
+
+    @include mediaTablet {
+        max-width: 690px;
+    }
 }
 
 

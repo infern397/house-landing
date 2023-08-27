@@ -5,14 +5,31 @@
     padding: 70px 15px;
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        gap: 40px;
+
+        .team__img {
+            width: 510px;
+        }
+
+        .content {
+            padding: 0 0 70px;
+        }
+    }
 }
 .team__img {
 }
-.content {
+.team__content {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 124px;
+
+    @include mediaTablet {
+        padding-top: 0;
+    }
 }
 .team__title {
     font-size: 40px;

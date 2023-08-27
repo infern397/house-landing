@@ -10,10 +10,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    padding: 0;
 }
 .reproductions__title {
     font-size: 40px;
     line-height: 110%; /* 44px */
+
+    @include mediaTablet {
+        font-size: 30px;
+    }
 }
 .reproductions__btns {
     display: flex;
@@ -39,9 +44,14 @@
 }
 .reproductions__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
 }
+
 .reproductions__card {
     display: flex;
     flex-direction: column;
@@ -50,12 +60,13 @@
 
     padding: 20px;
 
-    width: 350px;
+    // width: 350px;
     height: 730px;
 
     background-color: $green-secondary;
 }
 .card__img {
+    height: 422px;
 }
 
 .card__text {
@@ -87,4 +98,9 @@
 .card__btn {
     width: 310px;
     height: 65px;
+
+    @include mediaTablet {
+        width: 290px;
+        height: 65px;
+    }
 }

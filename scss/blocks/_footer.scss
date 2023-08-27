@@ -13,26 +13,51 @@
 .footer__inner {
     display: flex;
     padding: 23px 15px;
+
+    @include mediaPreTablet {
+        flex-direction: column;
+    }
 }
 .footer__left {
     margin-right: 115px;
+
+    @include mediaPreTablet {
+        display: flex;
+        margin-right: 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 }
 .logo {
 }
 .footer__phone {
     margin-top: 35px;
     font-size: 20px;
+
+    @include mediaPreTablet {
+        margin-top: 0;
+        
+    }
 }
 .footer__phone-desc {
     color: $faded;
 }
 .footer__right {
     display: flex;
+
+    @include mediaPreTablet {
+        justify-content: space-between;
+    }
 }
 .footer__nav {
     display: flex;
     gap: 60px;
     margin-right: 250px;
+
+    @include mediaPreTablet {
+        margin-right: 0;
+    }
 }
 .footer__nav-column {
     display: flex;
@@ -53,6 +78,10 @@
         transition: fill 0.5s ease;
     }
     transition: fill 0.5s ease;
+
+    @include mediaPreTablet {
+        width: 170px;
+    }
 }
 .social__images {
     display: flex;

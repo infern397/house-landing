@@ -1,0 +1,11 @@
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mediaPreTablet {
+    @media screen and (max-width: 1150px) {
+        @content;
+    }
+}
